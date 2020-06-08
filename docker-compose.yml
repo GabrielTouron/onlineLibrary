@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  db:
+    image: mysql
+    restart: always
+    environment:
+      MYSQL_DATABASE: onlineLibrary
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: free
+      MYSQL_ROOT_PASSWORD: free
+    ports:
+      - 3306:3306
